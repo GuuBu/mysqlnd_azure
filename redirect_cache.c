@@ -124,7 +124,7 @@ MYSQLND_AZURE_REDIRECT_INFO* mysqlnd_azure_find_redirect_cache(const char* user,
 
         return (MYSQLND_AZURE_REDIRECT_INFO*)zv_dest;
     }
-
+//add a valid comment
     return NULL;
 }
 /* }}} */
