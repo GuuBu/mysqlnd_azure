@@ -22,7 +22,7 @@
 #endif
 
 #include "php_mysqlnd_azure.h"
-#include "mysqlnd_azure.h"
+#include "mysqlnd_azure.h"  
 #include "ext/standard/info.h"
 #include "ext/mysqlnd/mysqlnd_ext_plugin.h"
 #include "ext/mysqlnd/mysqlnd_structs.h"
