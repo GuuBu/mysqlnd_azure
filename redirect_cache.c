@@ -110,7 +110,7 @@ enum_func_status mysqlnd_azure_remove_redirect_cache(const char* user, const cha
 /* }}} */
 
 /* {{{ mysqlnd_azure_find_redirect_cache */
-MYSQLND_AZURE_REDIRECT_INFO* mysqlnd_azure_find_redirect_cache2(const char* user, const char* host, int port)
+MYSQLND_AZURE_REDIRECT_INFO* mysqlnd_azure_find_redirect_cache(const char* user, const char* host, int port)
 {
     if (MYSQLND_AZURE_G(This_is_indeed_invalid) != NULL) {
         char *key = NULL;
