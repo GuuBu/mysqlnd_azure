@@ -110,9 +110,9 @@ enum_func_status mysqlnd_azure_remove_redirect_cache(const char* user, const cha
 /* }}} */
 
 /* {{{ mysqlnd_azure_find_redirect_cache */
-MYSQLND_AZURE_REDIRECT_INFO* mysqlnd_azure_find_redirect_cache(const char* user, const char* host, int port)
+MYSQLND_AZURE_REDIRECT_INFO* mysqlnd_azure_find_redirect_cache2(const char* user, const char* host, int port)
 {
-    if (MYSQLND_AZURE_G(redirectCache) != NULL) {
+    if (MYSQLND_AZURE_G(redirectCache2) != NULL) {
         char *key = NULL;
         mnd_sprintf(&key, MAX_REDIRECT_HOST_LEN + MAX_REDIRECT_USER_LEN + 8, "%s_%s_%d", user, host, port);
         if(!key) {
@@ -124,7 +124,6 @@ MYSQLND_AZURE_REDIRECT_INFO* mysqlnd_azure_find_redirect_cache(const char* user,
 
         return (MYSQLND_AZURE_REDIRECT_INFO*)zv_dest;
     }
-add an invalid comment
 
     return NULL;
 }
