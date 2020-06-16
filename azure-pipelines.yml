@@ -1,7 +1,7 @@
 parameters:
 - name: configs
   type: string
-  default: 'x86,x64'
+  default: 'x86,x64,arm'
 
 trigger: none
 
