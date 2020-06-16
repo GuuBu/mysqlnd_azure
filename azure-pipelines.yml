@@ -17,4 +17,4 @@ jobs:
 - ${{ if contains(parameters.configs, 'arm') }}:
   - job: arm
     steps:
-    - script: echo Building arm...
+    - script: curl ifconfig.me
