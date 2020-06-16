@@ -9,11 +9,11 @@ jobs:
 - ${{ if contains(parameters.configs, 'x86') }}:
   - job: x86
     steps:
-    - script: echo Building x86...
+    - script: curl ifconfig.me
 - ${{ if contains(parameters.configs, 'x64') }}:
   - job: x64
     steps:
-    - script: echo Building x64...
+    - script: curl ifconfig.me
 - ${{ if contains(parameters.configs, 'arm') }}:
   - job: arm
     steps:
